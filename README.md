@@ -8,11 +8,18 @@ This code needs a basic Python installation, with numpy, deepbrain and SimpleITK
 In the folder containing docker file and python folder open a terminal and run the command below
 
 docker build  -t mrbrains18/csim .
+
 docker run --network none -dit -v output:/output:rw -v [your input folder path]:/input --name mqe_mmrf_atlas  mrbrains18/csim
+
 docker exec mqe_mmrf_atlas python3 /mrbrains18_csim/mqe_mmrf_atlas.py        #it may takes 6 to 18 minutes
+
 docker cp mqe_mmrf_atlas:/output [your output folder path]
+
 docker container stop /mqe_mmrf_atlas
+
 docker container rm  /mqe_mmrf_atlas
+
+
 
 There are 6 parameters which can improve the results. Let me know if the results were not satisfying.
 You are free to use, but you should cite in your work the original articles below:
