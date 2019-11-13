@@ -2,7 +2,7 @@
 High Accuracy Brain Image Segmentation
 using this code to label brain needs to cite the paper below
 Tsallis-Entropy Segmentation through MRF and Alzheimer anatomic reference for Brain Magnetic Resonance Parcellation
-by: Mehran Azimbagirad et al. https://doi-org.ez67.periodicos.capes.gov.br/10.1016/j.mri.2019.11.002
+by: Mehran Azimbagirad et al. https://doi.org/10.1016/j.mri.2019.11.002
 This code needs a basic Python installation, with numpy, deepbrain and SimpleITK added also Docker image. We therefore used miniconda, which has Docker container available that we can inherit from: continuumio/miniconda.
 
 In the folder containing docker file and python folder open a terminal and run the command below
